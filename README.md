@@ -1,38 +1,41 @@
-#Kotlin Vigenere Cipher (Command-Line Tool)
-This project provides a command-line tool for secure message encryption and decryption using the classic Vigenere cipher, a polyalphabetic substitution cipher.
+# Kotlin Vigenère Cipher 🔐
 
-Features
-User-Friendly Interface: A simple menu guides you effortlessly through encryption and decryption.
-Encryption & Decryption: Seamlessly transform plaintext messages into ciphertext and vice versa using a secret keyword.
-Case-Insensitive: Input capitalization is handled automatically, ensuring consistent results.
-Non-Alphabetic Character Preservation: Numbers, punctuation, and other non-letter characters remain unchanged, preserving the original message structure.
-Robust Implementation: The core Vigenere cipher logic utilizes modular arithmetic for accurate letter shifts.
-Clear Output: Encrypted/decrypted messages are displayed directly in the console for immediate feedback.
-Error Handling: Invalid inputs are gracefully handled with informative messages.
-How to Use
-Compile: Ensure you have Kotlin installed and compile the code (using the Kotlin compiler or your IDE).
-Run: Execute the compiled program from your command line.
-Choose: Select from the menu:
-1 to encrypt a message
-2 to decrypt a message
-0 to exit
-Enter: Follow the prompts to input your message and secret key.
-View: The resulting encrypted/decrypted message will be displayed.
-Example Usage
+This command-line tool securely encrypts and decrypts messages using the classic Vigenère cipher, a historically significant polyalphabetic substitution cipher known for its strength in the pre-computer era.
 
-Example Usage
+## Key Features
+- Command-Line Interface: Easily encrypt and decrypt messages directly from your terminal.
+- Kotlin Implementation: Modern and expressive programming language for a clean codebase.
+- User-Friendly Menu: Intuitive menu guides you through the encryption/decryption process.
 
+## Getting Started
+### Prerequisites
+Ensure you have Kotlin installed on your system. [Kotlin Installation Guide](https://kotlinlang.org/docs/tutorials/command-line.html)
+
+### Compilation
+- Open the project in your favorite IDE (IntelliJ IDEA, etc.) or use the Kotlin compiler directly.
+- Build the project to generate the executable file.
+
+### Running the Application
+- Open your terminal or command prompt.
+- Navigate to the directory where the compiled executable is located.
+- Run the executable (e.g., `./kotlin-vigenere-cipher` or `kotlin-vigenere-cipher.exe`).
+
+### Using the Menu
+- **Encrypt:** Enter 1 and follow the prompts to provide your message and secret key.
+- **Decrypt:** Enter 2 and follow the prompts to provide your ciphertext and secret key.
+- **Exit:** Enter 0 to quit the application.
+
+## Example Usage
+```bash
 # Encryption
 Choose an option:
 1 - Encode message
 2 - Decode message
 0 - Exit
 1
-Enter the message: 
-This is a secret message
-Enter the key: 
-KEYWORD
-The encrypted text is: lhislszsecjexqysszgf
+Enter the message: attackatdawn
+Enter the key: LEMON
+The encrypted text is: lxfopvefrnhr
 
 # Decryption
 Choose an option:
@@ -40,13 +43,12 @@ Choose an option:
 2 - Decode message
 0 - Exit
 2
-Enter the message:
-lhislszsecjexqysszgf
-Enter the key:
-KEYWORD
-The decoded message is: thisisasecretmessage
+Enter the message: lxfopvefrnhr
+Enter the key: LEMON
+The decoded message is: attackatdawn
+````
 
-Contributing
-Contributions are welcome! Feel free to open issues or submit pull requests.
+## Contributions
+😄 Contributions are always welcome! Feel free to open issues or submit pull requests to contribute to this project.
 
-Let me know if you'd like any other modifications!
+Let me know if you need further modifications!
